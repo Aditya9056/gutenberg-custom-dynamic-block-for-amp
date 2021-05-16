@@ -1,0 +1,23 @@
+{
+  "name": "dynamic-block",
+  "version": "1.0.0",
+  "description": "Dynamic block plugin for Amp Plugin",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "test:js": "wp-scripts test-unit-js src/edit.js",
+    "test": "vendor/phpunit/phpunit/phpunit --configuration=test/Unit/phpunit.xml",
+    "lint:js:src": "wp-scripts lint-js ./src"
+  },
+  "author": "Aditya Jain",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "15.0.1",
+    "eslint": "^7.26.0",
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  }
+}
